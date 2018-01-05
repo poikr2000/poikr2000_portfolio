@@ -7,6 +7,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<content tag="local_script">
+<script>
+$(document).ready(function(){
+	$('#signup').on("click",function(){
+		if($('#agree_checkbox1').is(':checked')){
+		}else{
+			$('#termsModalMsg').text("이용약관에 동의하셔야 회원가입을 하실 수 있습니다.");
+			$('#termsModal').modal('show');
+			return;
+		}
+		if($('#agree_checkbox2').is(':checked')){
+		}else{
+			$('#termsModalMsg').text("개인정보 취급방침에 동의하셔야 회원가입을 하실 수 있습니다.");
+			$('#termsModal').modal('show');
+			return;
+		}
+		var url="memberInsertForm";
+		$(location).attr('href',url);
+	});
+});
+</script>
+</content>
 <body>
 <form action="">
 	<div class="col-sm-12" style="background: black;height:90px;">
@@ -296,13 +318,14 @@
 					
 				</div>
 				<div class="agree-check-box col-sm-offset-2" style="text-align:left;margin-top:5px;">
-					<input type="checkbox" name="agree_checkbox" id="agree_checkbox1" value="이용약관">
+					<input type="checkbox" name="agree_checkbox1" id="agree_checkbox1" value="이용약관">
 					<label for="agree_checkbox1">위 이용약관에 동의합니다.</label>
 				</div>
 				<div class="col-sm-offset-2" style="text-align:left;margin-top:15px;">
 					<h3 class="page-title__title" >개인정보 취급방침</h3>
 				</div>
 				<div class="col-sm-offset-2" style="overflow:scroll; width:800px; height:300px; padding:10px; text-align:left; border: 1px solid gray;">
+					<h4>개인정보 보호정책</h4>
 					<p>
 						우리 헌법은 국민의 기본권인 사생활의 비밀과 자유 및 통신의 비밀을 보장하고 있으므로 도/감청 등에의한 개인 정보 및 사생활의 은밀한 탐지는 원칙적으로 불법입니다. 그러나 우리 사회에 횡행하는 불법 도청, 통신상의 정보 유출로 인하여 심각한 인권 침해가 나타나고 있고 국민 개개인의 자유로운 생활형성이 위협 받고 있습니다.<br/>
 						이러한 기본권 침해의 소지를 원천적으로 제거함으로써 K.O.K FITNESS회원의 프라이버시를 철저히 보호하여 정보화 사회에서의 통신의 자유를 보장하고자 아래와 같이 개인정보보호정책을 명시합니다. K.O.K FITNESS 개인정보보호정책은 정부의 법률 및 지침의 변경과 K.O.K FITNESS의 정책 변화에 따라 변경될 수 있습니다. 회원님께서는 K.O.K FITNESS 사이트 방문 시에 수시로 확인하시기 바랍니다.
@@ -388,12 +411,28 @@
 					</div>
 				</div>
 				<div class="agree-check-box col-sm-offset-2" style="text-align:left;margin-top:5px;">
-					<input type="checkbox" name="agree_checkbox" id="agree_checkbox1" value="이용약관">
+					<input type="checkbox" name="agree_checkbox2" id="agree_checkbox2" value="개인정보">
 					<label for="agree_checkbox1">위 개인정보 취급방침에 동의합니다.</label>
 				</div>
-			
 			</div>
-			
+			<div class="col-sm-offset-4 col-sm-4" style="margin-top:20px;">
+				<button class="btn" type="button" onclick="history.back();">돌아가기</button>&nbsp&nbsp&nbsp&nbsp
+				<button class="btn" type="button" id="signup" name="signup">회원가입</button>
+			</div>
+	</div>
+	<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      </div>
+	      <div class="modal-body">
+	        <span id="termsModalMsg">...</span>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </form>
 </body>

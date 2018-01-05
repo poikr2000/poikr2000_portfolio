@@ -11,4 +11,9 @@ public class MemberController {
 		
 		return "member/member_terms";
 	}
+	@RequestMapping(value = "memberInsertForm", method = RequestMethod.GET)
+	public String memberInsertForm() {
+		
+		return "member/member_insert";
+	}
 }

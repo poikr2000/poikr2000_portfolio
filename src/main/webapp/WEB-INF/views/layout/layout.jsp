@@ -13,10 +13,11 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <!-- bootstrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="resources/js/jquery-1.12.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="resources/js/parsley.min.js"></script>
 <!-- Fonts-->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/assets/fonts/fontawesome/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/assets/fonts/themify-icons/themify-icons.css">
@@ -50,7 +51,6 @@
 <decorator:getProperty property="page.local_script"></decorator:getProperty>
 
 	<!-- Vendors-->
-		<script type="text/javascript" src="<c:url value="/resources/assets/vendors/jquery/jquery.min.js" />"></script>
 		<script type="text/javascript" src="<c:url value="/resources/assets/vendors/imagesloaded/imagesloaded.pkgd.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/resources/assets/vendors/isotope-layout/isotope.pkgd.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/resources/assets/vendors/jquery.countdown/jquery.countdown.min.js"/>"></script>
