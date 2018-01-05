@@ -37,8 +37,15 @@
 <title>K.O.K FITNESS</title>
 </head>
 <body>
-<page:applyDecorator name="layoutheader"/>
-<decorator:body></decorator:body>
+<div>
+	<page:applyDecorator name="layoutheader"/>
+</div>
+<div>
+	<decorator:body></decorator:body>
+</div>
+<div>
+	<page:applyDecorator name="layoutfooter"/>
+</div>
 
 <decorator:getProperty property="page.local_script"></decorator:getProperty>
 

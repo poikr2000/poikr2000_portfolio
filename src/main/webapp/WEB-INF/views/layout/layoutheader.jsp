@@ -11,30 +11,9 @@
 	<div class="page-wrap">
 		<header class="header header__style-02">
 			<div class="container">
-				<div class="header__logo"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></div>
+				<div class="header__logo"><a href="index.html"><img src="resources/assets/img/logo.png" alt=""/></a></div>
 				<div class="header__toogleGroup">
-					<div class="header__chooseLanguage">
-						<!-- dropdown -->
-						<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-							<div class="dropdown__content" data-position="right">
-								<ul class="list-style-none">
-									<li><a href="#">EN</a></li>
-									<li><a href="#">DE</a></li>
-									<li><a href="#">VI</a></li>
-								</ul>
-							</div>
-						</div><!-- End / dropdown -->
-					</div>
-					<div class="search-form">
-						<div class="search-form__toggle"><i class="ti-search"></i></div>
-						<div class="search-form__form">
-							<!-- form-search -->
-							<div class="form-search">
-								<form>
-									<input class="form-control" type="text" placeholder="Hit enter to search or ESC to close"/>
-								</form>
-							</div><!-- End / form-search -->
-						</div>
+					<div class="btn" ><a href="">로그인</a>&nbsp|&nbsp<a href="memberTerms">회원가입</a>
 					</div>
 				</div>
 				<!-- consult-nav -->
