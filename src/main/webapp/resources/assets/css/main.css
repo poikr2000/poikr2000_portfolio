@@ -796,12 +796,12 @@ input[type="month"], input[type="time"], input[type="week"],
 input[type="number"], input[type="email"], input[type="url"],
 input[type="search"], input[type="tel"], input[type="color"] {
     box-shadow: none;
-    outline: none;
+    outline: black;
     margin: 0;
     border-radius: 0;
     padding: 0 15px;
     line-height: 44px;
-    border: 1px solid #ebebeb;
+    border: 1px solid #c2c2c2;
     color: #000;
     font-size: 14px;
     vertical-align: middle;

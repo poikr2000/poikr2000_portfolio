@@ -10,7 +10,7 @@
 <content tag="local_script">
 <script>
 $(document).ready(function(){
-	$('#signup').on("click",function(){
+	$('#signupform').on("click",function(){
 		if($('#agree_checkbox1').is(':checked')){
 		}else{
 			$('#termsModalMsg').text("이용약관에 동의하셔야 회원가입을 하실 수 있습니다.");
@@ -30,7 +30,7 @@ $(document).ready(function(){
 </script>
 </content>
 <body>
-<form action="">
+<form>
 	<div class="col-sm-12" style="background: black;height:90px;">
 	</div>
 	<div class="page-title">
@@ -415,9 +415,9 @@ $(document).ready(function(){
 					<label for="agree_checkbox1">위 개인정보 취급방침에 동의합니다.</label>
 				</div>
 			</div>
-			<div class="col-sm-offset-4 col-sm-4" style="margin-top:20px;">
+			<div class="col-sm-offset-4 col-sm-4" style="margin-top:20px;margin-bottom: 70px">
 				<button class="btn" type="button" onclick="history.back();">돌아가기</button>&nbsp&nbsp&nbsp&nbsp
-				<button class="btn" type="button" id="signup" name="signup">회원가입</button>
+				<button class="btn" type="button" id="signupform" name="signupform">회원가입</button>
 			</div>
 	</div>
 	<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
