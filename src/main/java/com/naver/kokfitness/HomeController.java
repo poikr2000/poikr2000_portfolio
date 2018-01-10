@@ -31,5 +31,9 @@ public class HomeController {
 		
 		return "index";
 	}
-	
+	@RequestMapping(value = "jusoPopup", method = RequestMethod.POST)
+	public String jusoPopup(Locale locale, Model model) {
+		
+		return "jusoPopup";
+	}
 }
